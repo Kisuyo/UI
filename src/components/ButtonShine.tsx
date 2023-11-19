@@ -24,7 +24,7 @@ export default function ButtonShine() {
           background-image:
     linear-gradient(
       180deg in hsl,
-      hsl(253 0% 41% ) 29% 29%, hsl(0 0% 24%) 75% 75%
+      hsl(253 0% 41%) 29% 29%, hsl(0 0% 24%) 75% 75%
     )
   ;
     }
@@ -55,7 +55,7 @@ export default function ButtonShine() {
               <Icon name="Noise"></Icon>
             </div>
           </div>
-          <div class="px-8 p-2 z-20 flex items-center justify-center w-full h-full  bg-neutral-900 rounded-full font-light transition-all ">
+          <div class="px-8 p-5 z-20 flex items-center justify-center w-full h-full  bg-neutral-900 rounded-full font-light transition-all ">
             <div id="buttonText">Click</div>
           </div>
         </div>
