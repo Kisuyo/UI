@@ -19,7 +19,7 @@ export default function ButtonShine() {
         }
         `}
       </style>
-      <div class="w-[200px] h-[60px]">
+      <div class="">
         <div
           class="rounded-full w-full transition-all h-full p-0.5 text-white"
           id="ButtonShine"
