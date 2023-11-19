@@ -24,7 +24,7 @@ export default function ButtonShine() {
           class="rounded-full w-full transition-all h-full p-0.5 text-white"
           id="ButtonShine"
         >
-          <div class="px-8 p-2 bg-neutral-900 rounded-full font-light transition-all">
+          <div class="px-8 p-2 w-full h-full bg-neutral-900 rounded-full font-light transition-all">
             Click me!
           </div>
         </div>
