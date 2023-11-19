@@ -1,3 +1,5 @@
+import Icon from "./Icon"
+
 export default function ButtonShine() {
   return (
     <>
@@ -5,10 +7,11 @@ export default function ButtonShine() {
         {`
         #ButtonShine {
           background-image:
-            linear-gradient(
-              124deg in hsl,
-              hsl(0 0% 20%) 35% 35%, hsl(253 0% 31%) 50%, hsl(0 0% 20%) 65% 65%
-            );
+          linear-gradient(
+            249deg in hsl,
+            hsl(0 0% 14%) 36% 36%, hsl(224 0% 49%) 50%, hsl(0 0% 14%) 64% 64%
+          )
+        ;
           background-size: 200% 100%;
           background-position: 100% 0%;
 
@@ -16,16 +19,44 @@ export default function ButtonShine() {
         #ButtonShine:hover {
           background-position: 0% 0%;
           background-repeat: no-repeat;
-        }
+        };
+        #ButtonNoise {
+          background-image:
+    linear-gradient(
+      180deg in hsl,
+      hsl(253 0% 41% ) 29% 29%, hsl(0 0% 24%) 75% 75%
+    )
+  ;
+    }
+  #buttonText {
+    background-image:
+    linear-gradient(
+      169deg in hsl,
+      hsl(253 0% 100%) 49% 49%, hsl(0 0% 61%) 96% 96%
+    )
+  ;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-background-clip: text;
+  }
+
         `}
       </style>
       <div class="">
         <div
-          class="rounded-full w-full transition-all h-full p-0.5 text-white"
+          class="rounded-full w-full transition-all h-full p-0.5 text-white relative overflow-hidden "
           id="ButtonShine"
         >
-          <div class="px-8 p-2 w-full h-full bg-neutral-900 rounded-full font-light transition-all">
-            Click me!
+          <div
+            id="ButtonNoise"
+            class="z-10 bg-center w-full h-full absolute top-0 left-0"
+          >
+            <div class="opacity-10">
+              <Icon name="Noise"></Icon>
+            </div>
+          </div>
+          <div class="px-8 p-2 z-20 flex items-center justify-center w-full h-full  bg-neutral-900 rounded-full font-light transition-all ">
+            <div id="buttonText">Click</div>
           </div>
         </div>
       </div>
