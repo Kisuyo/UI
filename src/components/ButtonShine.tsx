@@ -42,7 +42,7 @@ export default function ButtonShine() {
 
         `}
       </style>
-      <div class="">
+      <div class="w-[200px] h-[60px]">
         <div
           class="rounded-full w-full transition-all h-full p-0.5 text-white relative overflow-hidden "
           id="ButtonShine"
