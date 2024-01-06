@@ -11,7 +11,8 @@ export default function SlideHover(props: Props) {
         {`
 
         .container:hover .active {
-          transform: translateY(0)
+          transform: translateY(0);
+
         }
         .container:hover .deactive {
           transform: translateY(20px);
@@ -20,8 +21,8 @@ export default function SlideHover(props: Props) {
 
       `}
       </style>
-      <div class="container overflow-hidden w-fit cursor-pointer h-fit relative">
-        <div class="active text-white translate-y-[-20px] transition-all ease-out duration-200">
+      <div class="container group hover:active:translate-y-0 overflow-hidden w-fit cursor-pointer h-fit relative">
+        <div class="active text-white translate-y-[-22px] transition-all ease-out duration-200">
           {props.children}
         </div>
         <div class="deactive  absolute top-0 left-0 ease-out transition-all duration-200">
